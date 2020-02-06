@@ -6,161 +6,277 @@
         "before": [
           {
             "result": {
-              "duration": 3222061623,
+              "duration": 2960841930,
               "status": "passed"
             },
             "match": {
-              "location": "contactUsSteps.setup()"
+              "location": "LoginToPortal.setup()"
             }
           }
         ],
-        "line": 5,
-        "name": "Submit information using the contact us form",
+        "line": 33,
+        "name": "Login to account with credentials",
         "description": "",
-        "id": "submit-ssata-to-webdriveruniversity.com-using-the-contact-us-form;submit-information-using-the-contact-us-form",
-        "after": [
-          {
-            "result": {
-              "duration": 22890067,
-              "status": "passed"
-            },
-            "match": {
-              "location": "contactUsSteps.tearDown()"
-            }
-          }
-        ],
+        "id": "login-to-account-at-webuniversity.com-using-login-portal;login-to-account-with-credentials;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 2114660914,
+              "duration": 2162110468,
               "status": "passed"
             },
-            "line": 6,
-            "name": "I acces webdriveruniversity",
+            "line": 24,
+            "name": "User navigates to \"https://webdriveruniversity.com/\"",
             "match": {
-              "location": "contactUsSteps.i_acces_webdriveruniversity()"
+              "arguments": [
+                {
+                  "val": "https://webdriveruniversity.com/",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginToPortal.user_navigates_to(String)"
             },
+            "matchedColumns": [
+              0
+            ],
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 295415656,
+              "duration": 326763858,
               "status": "passed"
             },
-            "line": 7,
-            "name": "I click in the contact us form",
+            "line": 25,
+            "name": "Usser clicks on the login button",
             "match": {
-              "location": "contactUsSteps.i_click_in_the_contact_us_form()"
+              "location": "LoginToPortal.usser_clicks_on_the_login_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 945590499,
+              "duration": 557431631,
               "status": "passed"
             },
-            "line": 8,
-            "name": "I enter a first name",
+            "line": 26,
+            "name": "User enters a \"Claudio\" username",
             "match": {
-              "location": "contactUsSteps.i_enter_a_first_name(DataTable)"
+              "arguments": [
+                {
+                  "val": "Claudio",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginToPortal.user_enters_a_username(String)"
             },
-            "rows": [
-              {
-                "cells": [
-                  "Claudio",
-                  "Akira",
-                  "Jones"
-                ],
-                "line": 9
-              }
+            "matchedColumns": [
+              1
             ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 211458643,
+              "duration": 243102531,
               "status": "passed"
             },
-            "line": 10,
-            "name": "I enter a last name",
+            "line": 27,
+            "name": "User enters a \"pass\" password",
             "match": {
-              "location": "contactUsSteps.i_enter_a_last_name()"
+              "arguments": [
+                {
+                  "val": "pass",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginToPortal.user_enters_a_password(String)"
             },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 316692298,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "I enter email address",
-            "match": {
-              "location": "contactUsSteps.i_enter_email_address()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1503386757,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "I enter comments",
-            "match": {
-              "location": "contactUsSteps.i_enter_comments(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "this is the 1st comment",
-                  "this is the 2nd comment!",
-                  "This is 3rd and the final comment of the day!!"
-                ],
-                "line": 13
-              }
+            "matchedColumns": [
+              2
             ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 4194440904,
+              "duration": 248191343,
               "status": "passed"
             },
-            "line": 14,
-            "name": "I click the submit button",
+            "line": 28,
+            "name": "I click on the submit button",
             "match": {
-              "location": "contactUsSteps.i_click_the_submit_button()"
+              "location": "LoginToPortal.i_click_on_the_submit_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 142870,
+              "duration": 21725758,
               "status": "passed"
             },
-            "line": 15,
-            "name": "The information should successfully be submitted via the contact us form",
+            "line": 29,
+            "name": "The user should be presented with a following prompt \"validationfailed\"",
             "match": {
-              "location": "contactUsSteps.the_information_should_successfully_be_submitted_via_the_contact_us_form()"
+              "arguments": [
+                {
+                  "val": "validationfailed",
+                  "offset": 54
+                }
+              ],
+              "location": "LoginToPortal.the_user_should_be_presented_with_a_following_prompt(String)"
             },
+            "matchedColumns": [
+              3
+            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 4,
-            "name": "@Loginweb"
+            "line": 22,
+            "name": "@scenarioOutline"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1086264770,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginToPortal.setup()"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "Login to account with credentials",
+        "description": "",
+        "id": "login-to-account-at-webuniversity.com-using-login-portal;login-to-account-with-credentials;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1769058673,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User navigates to \"https://webdriveruniversity.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://webdriveruniversity.com/",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginToPortal.user_navigates_to(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 250376344,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Usser clicks on the login button",
+            "match": {
+              "location": "LoginToPortal.usser_clicks_on_the_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 561819819,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User enters a \"BOb\" username",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BOb",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginToPortal.user_enters_a_username(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 276556017,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User enters a \"passwo\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "passwo",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginToPortal.user_enters_a_password(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 238488707,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click on the submit button",
+            "match": {
+              "location": "LoginToPortal.i_click_on_the_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24876928,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "The user should be presented with a following prompt \"validationfailed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "validationfailed",
+                  "offset": 54
+                }
+              ],
+              "location": "LoginToPortal.the_user_should_be_presented_with_a_following_prompt(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 22,
+            "name": "@scenarioOutline"
           }
         ]
       }
     ],
-    "name": "Submit ssata to webdriveruniversity.com using the contact us form",
-    "description": "A user should ne aacle to submit information via the contact us form",
-    "id": "submit-ssata-to-webdriveruniversity.com-using-the-contact-us-form",
+    "name": "Login to account at webuniversity.com using login portal",
+    "description": "",
+    "id": "login-to-account-at-webuniversity.com-using-login-portal",
     "keyword": "Feature",
-    "uri": "ContactUs.feature"
+    "uri": "LoginPortal.feature"
   }
 ]

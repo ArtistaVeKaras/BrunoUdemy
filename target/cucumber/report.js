@@ -1,147 +1,418 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("ContactUs.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("LoginPortal.feature");
 formatter.feature({
   "line": 1,
-  "name": "Submit ssata to webdriveruniversity.com using the contact us form",
-  "description": "A user should ne aacle to submit information via the contact us form",
-  "id": "submit-ssata-to-webdriveruniversity.com-using-the-contact-us-form",
+  "name": "Login to account at webuniversity.com using login portal",
+  "description": "",
+  "id": "login-to-account-at-webuniversity.com-using-login-portal",
   "keyword": "Feature"
 });
-formatter.before({
-  "duration": 3222061623,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 5,
-  "name": "Submit information using the contact us form",
-  "description": "",
-  "id": "submit-ssata-to-webdriveruniversity.com-using-the-contact-us-form;submit-information-using-the-contact-us-form",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
+formatter.scenarioOutline({
+  "comments": [
+    {
+      "line": 3,
+      "value": "#Background:"
+    },
     {
       "line": 4,
-      "name": "@Loginweb"
+      "value": "#  Given I acces webdriveruniversity portal"
+    },
+    {
+      "line": 5,
+      "value": "#  When I click on the login portal"
+    },
+    {
+      "line": 6,
+      "value": "#  And  I enter a username"
+    },
+    {
+      "line": 7,
+      "value": "#"
+    },
+    {
+      "line": 8,
+      "value": "#  # this will launch multiple scenarios"
+    },
+    {
+      "line": 9,
+      "value": "#  @LoginPortal"
+    },
+    {
+      "line": 10,
+      "value": "#  Scenario: Login to account with a valid password"
+    },
+    {
+      "line": 11,
+      "value": "#  And I enter a \"valid\" password"
+    },
+    {
+      "line": 12,
+      "value": "#  And I click on the submit button"
+    },
+    {
+      "line": 13,
+      "value": "#  Then I should be presented with a successful validation alert"
+    },
+    {
+      "line": 14,
+      "value": "#"
+    },
+    {
+      "line": 15,
+      "value": "#"
+    },
+    {
+      "line": 16,
+      "value": "#  @LoginPortal"
+    },
+    {
+      "line": 17,
+      "value": "#  Scenario: Login to account with a valid password"
+    },
+    {
+      "line": 18,
+      "value": "#    And I enter a \"invalid\" password"
+    },
+    {
+      "line": 19,
+      "value": "#    And I click on the submit button"
+    },
+    {
+      "line": 20,
+      "value": "#    Then I should be presented with a successful validation alert"
+    }
+  ],
+  "line": 23,
+  "name": "Login to account with credentials",
+  "description": "",
+  "id": "login-to-account-at-webuniversity.com-using-login-portal;login-to-account-with-credentials",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 22,
+      "name": "@scenarioOutline"
     }
   ]
 });
 formatter.step({
-  "line": 6,
-  "name": "I acces webdriveruniversity",
+  "line": 24,
+  "name": "User navigates to \"\u003curl\u003e\"",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
-  "name": "I click in the contact us form",
+  "line": 25,
+  "name": "Usser clicks on the login button",
   "keyword": "When "
 });
 formatter.step({
-  "line": 8,
-  "name": "I enter a first name",
+  "line": 26,
+  "name": "User enters a \"\u003cusername\u003e\" username",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 27,
+  "name": "User enters a \"\u003cpassword\u003e\" password",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 28,
+  "name": "I click on the submit button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 29,
+  "name": "The user should be presented with a following prompt \"\u003cmessage\u003e\"",
+  "keyword": "Then "
+});
+formatter.examples({
+  "line": 31,
+  "name": "",
+  "description": "",
+  "id": "login-to-account-at-webuniversity.com-using-login-portal;login-to-account-with-credentials;",
   "rows": [
     {
       "cells": [
+        "url",
+        "username",
+        "password",
+        "message"
+      ],
+      "line": 32,
+      "id": "login-to-account-at-webuniversity.com-using-login-portal;login-to-account-with-credentials;;1"
+    },
+    {
+      "cells": [
+        "https://webdriveruniversity.com/",
         "Claudio",
-        "Akira",
-        "Jones"
+        "pass",
+        "validationfailed"
       ],
-      "line": 9
-    }
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 10,
-  "name": "I enter a last name",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 11,
-  "name": "I enter email address",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 12,
-  "name": "I enter comments",
-  "rows": [
+      "line": 33,
+      "id": "login-to-account-at-webuniversity.com-using-login-portal;login-to-account-with-credentials;;2"
+    },
     {
       "cells": [
-        "this is the 1st comment",
-        "this is the 2nd comment!",
-        "This is 3rd and the final comment of the day!!"
+        "https://webdriveruniversity.com/",
+        "BOb",
+        "passwo",
+        "validationfailed"
       ],
-      "line": 13
+      "line": 34,
+      "id": "login-to-account-at-webuniversity.com-using-login-portal;login-to-account-with-credentials;;3"
     }
+  ],
+  "keyword": "Examples"
+});
+formatter.before({
+  "duration": 2960841930,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 33,
+  "name": "Login to account with credentials",
+  "description": "",
+  "id": "login-to-account-at-webuniversity.com-using-login-portal;login-to-account-with-credentials;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 22,
+      "name": "@scenarioOutline"
+    }
+  ]
+});
+formatter.step({
+  "line": 24,
+  "name": "User navigates to \"https://webdriveruniversity.com/\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 25,
+  "name": "Usser clicks on the login button",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 26,
+  "name": "User enters a \"Claudio\" username",
+  "matchedColumns": [
+    1
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 14,
-  "name": "I click the submit button",
+  "line": 27,
+  "name": "User enters a \"pass\" password",
+  "matchedColumns": [
+    2
+  ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
-  "name": "The information should successfully be submitted via the contact us form",
+  "line": 28,
+  "name": "I click on the submit button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 29,
+  "name": "The user should be presented with a following prompt \"validationfailed\"",
+  "matchedColumns": [
+    3
+  ],
   "keyword": "Then "
 });
 formatter.match({
-  "location": "contactUsSteps.i_acces_webdriveruniversity()"
+  "arguments": [
+    {
+      "val": "https://webdriveruniversity.com/",
+      "offset": 19
+    }
+  ],
+  "location": "LoginToPortal.user_navigates_to(String)"
 });
 formatter.result({
-  "duration": 2114660914,
+  "duration": 2162110468,
   "status": "passed"
 });
 formatter.match({
-  "location": "contactUsSteps.i_click_in_the_contact_us_form()"
+  "location": "LoginToPortal.usser_clicks_on_the_login_button()"
 });
 formatter.result({
-  "duration": 295415656,
+  "duration": 326763858,
   "status": "passed"
 });
 formatter.match({
-  "location": "contactUsSteps.i_enter_a_first_name(DataTable)"
+  "arguments": [
+    {
+      "val": "Claudio",
+      "offset": 15
+    }
+  ],
+  "location": "LoginToPortal.user_enters_a_username(String)"
 });
 formatter.result({
-  "duration": 945590499,
+  "duration": 557431631,
   "status": "passed"
 });
 formatter.match({
-  "location": "contactUsSteps.i_enter_a_last_name()"
+  "arguments": [
+    {
+      "val": "pass",
+      "offset": 15
+    }
+  ],
+  "location": "LoginToPortal.user_enters_a_password(String)"
 });
 formatter.result({
-  "duration": 211458643,
+  "duration": 243102531,
   "status": "passed"
 });
 formatter.match({
-  "location": "contactUsSteps.i_enter_email_address()"
+  "location": "LoginToPortal.i_click_on_the_submit_button()"
 });
 formatter.result({
-  "duration": 316692298,
+  "duration": 248191343,
   "status": "passed"
 });
 formatter.match({
-  "location": "contactUsSteps.i_enter_comments(DataTable)"
+  "arguments": [
+    {
+      "val": "validationfailed",
+      "offset": 54
+    }
+  ],
+  "location": "LoginToPortal.the_user_should_be_presented_with_a_following_prompt(String)"
 });
 formatter.result({
-  "duration": 1503386757,
+  "duration": 21725758,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1086264770,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 34,
+  "name": "Login to account with credentials",
+  "description": "",
+  "id": "login-to-account-at-webuniversity.com-using-login-portal;login-to-account-with-credentials;;3",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 22,
+      "name": "@scenarioOutline"
+    }
+  ]
+});
+formatter.step({
+  "line": 24,
+  "name": "User navigates to \"https://webdriveruniversity.com/\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 25,
+  "name": "Usser clicks on the login button",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 26,
+  "name": "User enters a \"BOb\" username",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 27,
+  "name": "User enters a \"passwo\" password",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 28,
+  "name": "I click on the submit button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 29,
+  "name": "The user should be presented with a following prompt \"validationfailed\"",
+  "matchedColumns": [
+    3
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "https://webdriveruniversity.com/",
+      "offset": 19
+    }
+  ],
+  "location": "LoginToPortal.user_navigates_to(String)"
+});
+formatter.result({
+  "duration": 1769058673,
   "status": "passed"
 });
 formatter.match({
-  "location": "contactUsSteps.i_click_the_submit_button()"
+  "location": "LoginToPortal.usser_clicks_on_the_login_button()"
 });
 formatter.result({
-  "duration": 4194440904,
+  "duration": 250376344,
   "status": "passed"
 });
 formatter.match({
-  "location": "contactUsSteps.the_information_should_successfully_be_submitted_via_the_contact_us_form()"
+  "arguments": [
+    {
+      "val": "BOb",
+      "offset": 15
+    }
+  ],
+  "location": "LoginToPortal.user_enters_a_username(String)"
 });
 formatter.result({
-  "duration": 142870,
+  "duration": 561819819,
   "status": "passed"
 });
-formatter.after({
-  "duration": 22890067,
+formatter.match({
+  "arguments": [
+    {
+      "val": "passwo",
+      "offset": 15
+    }
+  ],
+  "location": "LoginToPortal.user_enters_a_password(String)"
+});
+formatter.result({
+  "duration": 276556017,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginToPortal.i_click_on_the_submit_button()"
+});
+formatter.result({
+  "duration": 238488707,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "validationfailed",
+      "offset": 54
+    }
+  ],
+  "location": "LoginToPortal.the_user_should_be_presented_with_a_following_prompt(String)"
+});
+formatter.result({
+  "duration": 24876928,
   "status": "passed"
 });
 });

@@ -23,22 +23,22 @@ public class contactUsSteps {
 
 	WebDriver driver = null;
 
-	@Before
-	public WebDriver setup(){
-		String projPathString = System.getProperty("user.dir");
-		System.setProperty("webdriver.chrome.driver", "/home/claudio/Downloads/Drivers/chromedriver");
-		this.driver = new ChromeDriver();
-//		this.driver =  new FirefoxDriver();
-		//driver.manage().window().maximize();
-		return driver;
-	}
-
-	@After
-	public void tearDown() {
-		driver.manage().deleteAllCookies();
-//		driver.quit();
+//	@Before
+//	public WebDriver setup(){
+//		String projPathString = System.getProperty("user.dir");
+//		System.setProperty("webdriver.chrome.driver", "/home/claudio/Downloads/Drivers/chromedriver");
+//		this.driver = new ChromeDriver();
+////		this.driver =  new FirefoxDriver();
+//		//driver.manage().window().maximize();
+//		return driver;
+//	}
+//
+//	@After
+//	public void tearDown() {
+//		driver.manage().deleteAllCookies();
+////		driver.quit();
 //		driver.close();
-	}
+//	}
 
 	@Given("^I acces webdriveruniversity$")
 	public void i_acces_webdriveruniversity() throws Throwable {
