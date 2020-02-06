@@ -15,20 +15,20 @@ public class Loginsteps {
 
 	WebDriver driver = null;
 
-	@Before
-	public WebDriver setup(){
-		String projPathString = System.getProperty("user.dir");
-		System.setProperty("webdriver.chrome.driver", "/home/claudio/Downloads/Drivers/chromedriver");
-		this.driver = new ChromeDriver();
-		//driver.manage().window().maximize();
-				return driver;
-	}
+//	@Before
+//	public WebDriver setup(){
+//		String projPathString = System.getProperty("user.dir");
+//		System.setProperty("webdriver.chrome.driver", "/home/claudio/Downloads/Drivers/chromedriver");
+//		this.driver = new ChromeDriver();
+//		//driver.manage().window().maximize();
+//				return driver;
+//	}
 
-	@After
+//	@After
 	public void tearDown() {
-		driver.manage().deleteAllCookies();
-		driver.quit();
-		driver.close();
+//		driver.manage().deleteAllCookies();
+//		driver.quit();
+//		driver.close();
 	}
 
 	@Given("^User navigates to GitHub website$")
