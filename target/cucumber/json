@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 2960841930,
+              "duration": 3588822741,
               "status": "passed"
             },
             "match": {
@@ -23,7 +23,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2162110468,
+              "duration": 2499218189,
               "status": "passed"
             },
             "line": 24,
@@ -44,7 +44,7 @@
           },
           {
             "result": {
-              "duration": 326763858,
+              "duration": 352994229,
               "status": "passed"
             },
             "line": 25,
@@ -56,7 +56,7 @@
           },
           {
             "result": {
-              "duration": 557431631,
+              "duration": 696979111,
               "status": "passed"
             },
             "line": 26,
@@ -77,7 +77,7 @@
           },
           {
             "result": {
-              "duration": 243102531,
+              "duration": 302422631,
               "status": "passed"
             },
             "line": 27,
@@ -98,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 248191343,
+              "duration": 253298691,
               "status": "passed"
             },
             "line": 28,
@@ -110,7 +110,7 @@
           },
           {
             "result": {
-              "duration": 21725758,
+              "duration": 21531272,
               "status": "passed"
             },
             "line": 29,
@@ -133,142 +133,7 @@
         "tags": [
           {
             "line": 22,
-            "name": "@scenarioOutline"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 1086264770,
-              "status": "passed"
-            },
-            "match": {
-              "location": "LoginToPortal.setup()"
-            }
-          }
-        ],
-        "line": 34,
-        "name": "Login to account with credentials",
-        "description": "",
-        "id": "login-to-account-at-webuniversity.com-using-login-portal;login-to-account-with-credentials;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1769058673,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "User navigates to \"https://webdriveruniversity.com/\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "https://webdriveruniversity.com/",
-                  "offset": 19
-                }
-              ],
-              "location": "LoginToPortal.user_navigates_to(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 250376344,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "Usser clicks on the login button",
-            "match": {
-              "location": "LoginToPortal.usser_clicks_on_the_login_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 561819819,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "User enters a \"BOb\" username",
-            "match": {
-              "arguments": [
-                {
-                  "val": "BOb",
-                  "offset": 15
-                }
-              ],
-              "location": "LoginToPortal.user_enters_a_username(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 276556017,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User enters a \"passwo\" password",
-            "match": {
-              "arguments": [
-                {
-                  "val": "passwo",
-                  "offset": 15
-                }
-              ],
-              "location": "LoginToPortal.user_enters_a_password(String)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 238488707,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "I click on the submit button",
-            "match": {
-              "location": "LoginToPortal.i_click_on_the_submit_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 24876928,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "The user should be presented with a following prompt \"validationfailed\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "validationfailed",
-                  "offset": 54
-                }
-              ],
-              "location": "LoginToPortal.the_user_should_be_presented_with_a_following_prompt(String)"
-            },
-            "matchedColumns": [
-              3
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 22,
-            "name": "@scenarioOutline"
+            "name": "@Staging"
           }
         ]
       }
@@ -277,6 +142,6 @@
     "description": "",
     "id": "login-to-account-at-webuniversity.com-using-login-portal",
     "keyword": "Feature",
-    "uri": "LoginPortal.feature"
+    "uri": "LoginPortalStaging.feature"
   }
 ]

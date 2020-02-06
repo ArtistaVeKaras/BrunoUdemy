@@ -1,14 +1,14 @@
 package runner;
 
-import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+import org.junit.runner.RunWith;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = {"src/test/java/features/"},
+@CucumberOptions(features = {"src/test/java/featureLogin/"},
                  glue = "steps",
-                 tags = {"@scenarioOutline"},
+                 tags = {"@Staging"},
                  monochrome = true,
                  plugin = {"pretty", "html:target/cucumber",
                          "json:target/cucumber/json",
@@ -16,7 +16,7 @@ import cucumber.api.junit.Cucumber;
 				 
 )
 
-public class MainRunner {
+public class MainRunnerStaging {
 	
 
 }

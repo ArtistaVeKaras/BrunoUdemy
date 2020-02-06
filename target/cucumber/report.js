@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("LoginPortal.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("LoginPortalStaging.feature");
 formatter.feature({
   "line": 1,
   "name": "Login to account at webuniversity.com using login portal",
@@ -90,7 +90,7 @@ formatter.scenarioOutline({
   "tags": [
     {
       "line": 22,
-      "name": "@scenarioOutline"
+      "name": "@Staging"
     }
   ]
 });
@@ -149,22 +149,12 @@ formatter.examples({
       ],
       "line": 33,
       "id": "login-to-account-at-webuniversity.com-using-login-portal;login-to-account-with-credentials;;2"
-    },
-    {
-      "cells": [
-        "https://webdriveruniversity.com/",
-        "BOb",
-        "passwo",
-        "validationfailed"
-      ],
-      "line": 34,
-      "id": "login-to-account-at-webuniversity.com-using-login-portal;login-to-account-with-credentials;;3"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 2960841930,
+  "duration": 3588822741,
   "status": "passed"
 });
 formatter.scenario({
@@ -177,7 +167,7 @@ formatter.scenario({
   "tags": [
     {
       "line": 22,
-      "name": "@scenarioOutline"
+      "name": "@Staging"
     }
   ]
 });
@@ -233,14 +223,14 @@ formatter.match({
   "location": "LoginToPortal.user_navigates_to(String)"
 });
 formatter.result({
-  "duration": 2162110468,
+  "duration": 2499218189,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToPortal.usser_clicks_on_the_login_button()"
 });
 formatter.result({
-  "duration": 326763858,
+  "duration": 352994229,
   "status": "passed"
 });
 formatter.match({
@@ -253,7 +243,7 @@ formatter.match({
   "location": "LoginToPortal.user_enters_a_username(String)"
 });
 formatter.result({
-  "duration": 557431631,
+  "duration": 696979111,
   "status": "passed"
 });
 formatter.match({
@@ -266,14 +256,14 @@ formatter.match({
   "location": "LoginToPortal.user_enters_a_password(String)"
 });
 formatter.result({
-  "duration": 243102531,
+  "duration": 302422631,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginToPortal.i_click_on_the_submit_button()"
 });
 formatter.result({
-  "duration": 248191343,
+  "duration": 253298691,
   "status": "passed"
 });
 formatter.match({
@@ -286,133 +276,7 @@ formatter.match({
   "location": "LoginToPortal.the_user_should_be_presented_with_a_following_prompt(String)"
 });
 formatter.result({
-  "duration": 21725758,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1086264770,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 34,
-  "name": "Login to account with credentials",
-  "description": "",
-  "id": "login-to-account-at-webuniversity.com-using-login-portal;login-to-account-with-credentials;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 22,
-      "name": "@scenarioOutline"
-    }
-  ]
-});
-formatter.step({
-  "line": 24,
-  "name": "User navigates to \"https://webdriveruniversity.com/\"",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 25,
-  "name": "Usser clicks on the login button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 26,
-  "name": "User enters a \"BOb\" username",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 27,
-  "name": "User enters a \"passwo\" password",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 28,
-  "name": "I click on the submit button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 29,
-  "name": "The user should be presented with a following prompt \"validationfailed\"",
-  "matchedColumns": [
-    3
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "https://webdriveruniversity.com/",
-      "offset": 19
-    }
-  ],
-  "location": "LoginToPortal.user_navigates_to(String)"
-});
-formatter.result({
-  "duration": 1769058673,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginToPortal.usser_clicks_on_the_login_button()"
-});
-formatter.result({
-  "duration": 250376344,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "BOb",
-      "offset": 15
-    }
-  ],
-  "location": "LoginToPortal.user_enters_a_username(String)"
-});
-formatter.result({
-  "duration": 561819819,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "passwo",
-      "offset": 15
-    }
-  ],
-  "location": "LoginToPortal.user_enters_a_password(String)"
-});
-formatter.result({
-  "duration": 276556017,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginToPortal.i_click_on_the_submit_button()"
-});
-formatter.result({
-  "duration": 238488707,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "validationfailed",
-      "offset": 54
-    }
-  ],
-  "location": "LoginToPortal.the_user_should_be_presented_with_a_following_prompt(String)"
-});
-formatter.result({
-  "duration": 24876928,
+  "duration": 21531272,
   "status": "passed"
 });
 });
