@@ -11,22 +11,23 @@ import org.openqa.selenium.support.FindBy;
 
 public class EbayCssSelectors {
 
+    // TODO: 07/02/2020  add global varibles here for each item search
 //    By username = @FindBy('#username');
     public  static WebDriver driver;
 
-    @Before
-    public WebDriver setup() {
-        System.setProperty("webdriver.chrome.driver", "/home/claudio/Downloads/Drivers/chromedriver");
-        this.driver = new ChromeDriver();
-        //driver.manage().window().maximize();
-        return driver;
-    }
-
-    @After
-    public void tearDown(){
-        driver.manage().deleteAllCookies();
-        driver.quit();
-    }
+//    @Before
+//    public WebDriver setup() {
+//        System.setProperty("webdriver.chrome.driver", "/home/claudio/Downloads/Drivers/chromedriver");
+//        this.driver = new ChromeDriver();
+//        //driver.manage().window().maximize();
+//        return driver;
+//    }
+//
+//    @After
+//    public void tearDown(){
+//        driver.manage().deleteAllCookies();
+//        driver.quit();
+//    }
 
     //practicing csselectors
     @Given("^I launch ebay website$")
@@ -34,11 +35,14 @@ public class EbayCssSelectors {
 //        driver.get("https://www.ebay.co.uk/");
 //        driver.findElement(By.cssSelector("#gh-ac")).sendKeys("book");
 //        driver.findElement(By.cssSelector("#gh-btn")).click();
-        driver.get("https://wordpress.com/start/user");
 
+        //launching wordpress website
+        // TODO: 07/02/2020  send dat to form using the datatable list 
+        driver.get("https://wordpress.com/start/user");
+        Thread.sleep(3000);
         //cssSelectors using the tagName+id
-        driver.findElement(By.cssSelector("input#email")).sendKeys("Claudio@gmail.com");
-        driver.findElement(By.cssSelector("input#username")).sendKeys("Akira");
-        driver.findElement(By.cssSelector("input#password")).sendKeys("vegan is good");
+        driver.findElement(By.cssSelector("#email")).sendKeys("Claudio@gmail.com");
+        driver.findElement(By.cssSelector("#username")).sendKeys("Akira");
+        driver.findElement(By.cssSelector("#password")).sendKeys("vegan is good");
     }
 }

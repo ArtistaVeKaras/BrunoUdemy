@@ -9,8 +9,10 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import cucumber.api.java.it.Data;
 import org.joda.time.Seconds;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -37,7 +39,7 @@ public class contactUsSteps {
 //	public void tearDown() {
 //		driver.manage().deleteAllCookies();
 ////		driver.quit();
-//		driver.close();
+////		driver.close();
 //	}
 
 	@Given("^I acces webdriveruniversity$")
@@ -86,7 +88,9 @@ public class contactUsSteps {
 
 	@Then("^The information should successfully be submitted via the contact us form$")
 	public void the_information_should_successfully_be_submitted_via_the_contact_us_form() throws Throwable {
-
+		Thread.sleep(3000);
+		WebElement element =driver.findElement(By.xpath("//h1[contains(text(),'Thank You for your Message!')]"));
+		Assert.assertEquals("thankyouforyourmessage!",element.getText().toLowerCase().replaceAll("[ ()0-9]",""));
 	}
 
 }
