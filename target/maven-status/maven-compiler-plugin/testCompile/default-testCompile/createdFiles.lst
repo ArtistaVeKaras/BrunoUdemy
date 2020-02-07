@@ -1,2 +1,6 @@
+steps/LoginToPortal.class
 runner/MainRunner.class
+steps/contactUsSteps.class
+steps/EbayCssSelectors.class
+runner/MainRunnerStaging.class
 steps/Loginsteps.class

@@ -14,14 +14,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class LoginToPortal {
 
     public static WebDriver driver;
-    	@Before
-	public WebDriver setup(){
-		String projPathString = System.getProperty("user.dir");
-		System.setProperty("webdriver.chrome.driver", "/home/claudio/Downloads/Drivers/chromedriver");
-		this.driver = new ChromeDriver();
-		//driver.manage().window().maximize();
-				return driver;
-	}
+//    	@Before
+//	public WebDriver setup(){
+//		String projPathString = System.getProperty("user.dir");
+//		System.setProperty("webdriver.chrome.driver", "/home/claudio/Downloads/Drivers/chromedriver");
+//		this.driver = new ChromeDriver();
+//		//driver.manage().window().maximize();
+//				return driver;
+//	}
 
     @Given("^User navigates to \"([^\"]*)\"$")
     public void user_navigates_to(String url) throws Throwable {

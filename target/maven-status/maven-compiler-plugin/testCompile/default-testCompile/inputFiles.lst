@@ -1,2 +1,6 @@
-/home/claudio/Desktop/UdemyEclipse/CucumberFramework2/src/test/java/runner/MainRunner.java
-/home/claudio/Desktop/UdemyEclipse/CucumberFramework2/src/test/java/steps/Loginsteps.java
+/home/claudio/Documents/GitProjects/BrunoUdemy/src/test/java/steps/Loginsteps.java
+/home/claudio/Documents/GitProjects/BrunoUdemy/src/test/java/steps/EbayCssSelectors.java
+/home/claudio/Documents/GitProjects/BrunoUdemy/src/test/java/steps/contactUsSteps.java
+/home/claudio/Documents/GitProjects/BrunoUdemy/src/test/java/steps/LoginToPortal.java
+/home/claudio/Documents/GitProjects/BrunoUdemy/src/test/java/runner/MainRunnerStaging.java
+/home/claudio/Documents/GitProjects/BrunoUdemy/src/test/java/runner/MainRunner.java

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name=" Cucumber Framework">
+    <test name=" Cucumber Tests " junit="true">
+        <classes>
+            <!--the first runner class targets featureLogin package with the LoginPortal feature file @scenario outline-->
+            <!--the second runner class targets features packages with the loginPortal feature file with tag =@staging-->
+            <class name="runner.MainRunner" />
+            <class name="runner.MainRunnerStaging" />
+        </classes>
+    </test>
+</suite>
